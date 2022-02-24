@@ -1,0 +1,15 @@
+pragma solidity ^0.6.0;
+
+contract papiloBlock {
+    uint value;
+
+    function getValue() external view returns(uint) {
+        return value;
+    }
+
+    function setValue(uint _value) external {
+        value = _value;
+    }
+    // this is a line of code in which the first function will be used to
+    // show the value sent or rather set by the second function
+}

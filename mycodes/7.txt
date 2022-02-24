@@ -1,0 +1,28 @@
+pragma solidity ^0.6.6;
+
+contract papiloBlock {
+    // STRUCTS
+    // declare struct
+    // C.R.U.D
+    // array of structs
+    // mappinf of structs
+
+    struct User {
+        address add;
+        uint price;
+        string name;
+    }
+
+    function papilo(string calldata _name) external {
+        User memory user1 = User(msg.sender, 0, _name);
+        User memory user2 = User(msg.sender, 0, _name);
+        User memory user3 = User({name: _name, price: 0, add: msg.sender});
+        user3.add;
+        user3.price = 20;
+        delete user1;
+        
+        users.push(user2);
+        userList2[msg.sender] = User();
+    }
+    
+}

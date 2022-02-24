@@ -1,0 +1,10 @@
+pragma solidity ^0.6.0;
+
+contract papiloBlock {
+    uint private a;
+    
+    function Papilo() external {
+        uint b = a + 1;
+    }
+}
+// this is a line of code that will change the state of a variable using the above fuction

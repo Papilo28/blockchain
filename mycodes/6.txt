@@ -1,0 +1,39 @@
+pragma solidity ^0.6.6;
+
+contract papiloBlock {
+    // mapping declaration
+    // C.R.U.D
+    // default values
+    // exotic mapping 1: nested mappings
+    // exotic mapping 2: array inside mapping
+
+    //declaration
+    mapping(address => uint) products;
+    mapping(address => mapping (string => bool)) premiumProducts;
+
+    function papilo(address spender) external {
+        // to create
+        products[msg.sender] = 100;
+        // to read
+        products[msg.sender];
+        // to update
+        products[msg.sender] = 200;
+        // to delete
+        delete products[msg.sender];
+    }
+    // default values
+    products[anArbitraryAddress] => 0;
+
+    // exotic mapping
+    mapping[msg.sender][spender] = true;
+    mapping[msg.sender][spender];
+    mapping[msg.sender][spender] = false;
+    delete mapping[msg.sender][spender];
+
+    //array inside
+    price[msg.sender] = new uint[](2);
+    price[msg.sender].push(1);
+    price[msg.sender][0];
+    price[msg.sender][0] = 10;
+    delete price[msg.sender][1];
+}

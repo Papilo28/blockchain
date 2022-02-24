@@ -1,0 +1,18 @@
+pragma solidity ^0.6.0;
+
+contract papiloBlock {
+    // tx
+    // msg
+    // block
+    uint A;
+
+    tx.origin
+
+    msg.sender
+    msg.value
+
+    papilo => contract A          => contract B                 => contract C
+              tx.origin papilo       tx.origin = papilo 
+              msg.sender papilo      msg.sender = contract A 
+
+    block.timestamp / now => 1970 (s)

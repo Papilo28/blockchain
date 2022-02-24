@@ -1,0 +1,27 @@
+pragma solidity ^0.6.0;
+
+contract papiloBlock {
+    //fixed size 
+    bool imCoding;
+    address papilo;
+    uint a;
+    bytes32 data;
+
+    //variable size 
+    string Papilo;
+    bytes _data;
+    uint[] amountSent;
+    mapping(uint => string) Friends;
+
+    //user defined 
+    struct User {
+        uint[] friendIds;
+        uint id;
+        string name;
+    }
+    enum Names {
+        papilo,
+        Sani,
+        James
+    }
+}
